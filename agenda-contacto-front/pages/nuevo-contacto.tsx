@@ -108,7 +108,7 @@ export default function NuevoContacto() {
           </div>
           <div className="mt-10">
             <button
-              onClick={() => router.back()}
+              onClick={() => router.replace("/inicio")}
               className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
             >
               Cancelar
