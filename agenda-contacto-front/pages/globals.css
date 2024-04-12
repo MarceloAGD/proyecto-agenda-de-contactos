@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+.global__background{
+  background: rgb(142,228,235);
+  background: linear-gradient(180deg, rgb(186, 249, 255) 0%, rgb(170, 210, 255) 45%, rgb(218, 254, 255) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.background__navbar{
+  background-color: rgb(21, 80, 116);
+}
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+/* END: General styles */
+.banner{
+  @apply flex space-x-4;
+}
+.navbar__font{
+  @apply flex justify-between items-center sm:text-[20px] text-[15px] font-extrabold max-w-[1440px] mx-auto px-6 py-4;
+  color: antiquewhite;
+}
